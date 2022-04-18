@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Challenge Chapter 5</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_pss">Forgot password?</string>
+    <string name="add_account">Don\'t have an account yet?</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="asset_top">Asset Top</string>
+    <string name="image">Image</string>
+    <string name="tittle">Tittle</string>
+    <string name="hallo">Hallo, $User</string>
+    <string name="dafter_populer">Dafter Populer</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="latest">Latest</string>
+    <string name="image_movie">Image Movie</string>
+    <string name="nonton">Mau nonton apa?</string>
+    <string name="logout">Logout</string>
+    <string name="profile">Profile</string>
+</resources>
