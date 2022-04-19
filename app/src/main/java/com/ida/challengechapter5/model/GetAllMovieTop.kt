@@ -3,7 +3,18 @@ package com.ida.challengechapter5.model
 
 import com.google.gson.annotations.SerializedName
 
-data class Result(
+data class GetAllMovieTop(
+    @SerializedName("page")
+    val page: Int,
+    @SerializedName("results")
+    val results: List<ResultXX>,
+    @SerializedName("total_pages")
+    val totalPages: Int,
+    @SerializedName("total_results")
+    val totalResults: Int
+)
+
+data class ResultXX(
     @SerializedName("adult")
     val adult: Boolean,
     @SerializedName("backdrop_path")

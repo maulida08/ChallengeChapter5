@@ -3,18 +3,27 @@ package com.ida.challengechapter5.model
 
 import com.google.gson.annotations.SerializedName
 
-data class GetAllMoviePopular(
+data class GetAllMovieUpcoming(
+    @SerializedName("dates")
+    val dates: Dates,
     @SerializedName("page")
     val page: Int,
     @SerializedName("results")
-    val results: List<Result>,
+    val results: List<ResultX>,
     @SerializedName("total_pages")
     val totalPages: Int,
     @SerializedName("total_results")
     val totalResults: Int
 )
 
-data class Result(
+data class Dates(
+    @SerializedName("maximum")
+    val maximum: String,
+    @SerializedName("minimum")
+    val minimum: String
+)
+
+data class ResultX(
     @SerializedName("adult")
     val adult: Boolean,
     @SerializedName("backdrop_path")
