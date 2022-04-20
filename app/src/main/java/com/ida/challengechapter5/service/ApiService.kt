@@ -6,6 +6,7 @@ import com.ida.challengechapter5.model.GetAllMovieTop
 import com.ida.challengechapter5.model.GetAllMovieUpcoming
 import retrofit2.Call
 import retrofit2.http.GET
+import retrofit2.http.Path
 
 interface ApiService {
 
@@ -18,6 +19,6 @@ interface ApiService {
     @GET("movie/top_rated?api_key=7fd85d1ae16130aa2bbe3d705027b5be")
     fun getAllMovieTop() : Call<GetAllMovieTop>
 
-    @GET("movie/:movie_id")
-    fun getDetail() : Call<GetAllDetail>
+    @GET("movie/:{id}")
+    fun getALLDetail(@Path("id") id: Int) : Call<GetAllDetail>
 }
